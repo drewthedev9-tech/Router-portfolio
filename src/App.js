@@ -10,7 +10,8 @@ class App extends Component {
     return (
       <div>
         <Layout style={{background: 'url(https://images.unsplash.com/photo-1549605659-32d82da3a059?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80) center / cover'}}>
-          <Header transparent className='header-color' title="My Portfolio" >
+        {/* link back to landing page */}
+    <Header transparent className='header-color' title={<Link to="/" style={{ textDecoration : 'none', color:'white'}}>Myportfolio</Link>} scroll>
                 <Navigation>
                     <Link to="/resume">Resume</Link>
                     <Link to="/aboutme">About me</Link>
@@ -18,7 +19,7 @@ class App extends Component {
                     <Link to="/contact">Contact</Link>
                 </Navigation>
             </Header>
-            <Drawer title="Title">
+            <Drawer title={<Link to="/" style={{ textDecoration : 'none', color:'white'}}>Myportfolio</Link>}>
                 <Navigation>
                 <Link to="/resume">Resume</Link>
                     <Link to="/aboutme">About me</Link>
@@ -27,7 +28,7 @@ class App extends Component {
                 </Navigation>
             </Drawer>
             <Content>
-            <Main/>
+              <Main/>
             </Content>
         </Layout>
       </div>
