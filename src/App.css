@@ -106,3 +106,11 @@ flex-wrap: wrap;
 
 
 }
+
+/* Rsume page Css */
+
+.resume-right-col {
+background: grey;
+color : white;
+width: 80%;
+}
