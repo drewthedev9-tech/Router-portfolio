@@ -17,7 +17,7 @@ class Landing extends Component {
                         />
                         <div className='banner-text'>  
                             <h1>
-                            Full Stack Developer whats up.
+                            Full Stack Developer hi.
                             </h1>
                             <hr/>
                             <p> 
